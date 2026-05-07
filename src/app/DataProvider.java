@@ -1,3 +1,5 @@
+package app;
+
 public class DataProvider {
     public String[] getProductNames() {
         return new String[]{"apple", "grape", "mango", "apple", "orange"};
