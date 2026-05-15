@@ -14,7 +14,7 @@ public class DataHandler {
 
             sb.append(String.format("(%d) %s ", count, item));
         }
-        sb.deleteCharAt(items.length - 1);
+        sb.deleteCharAt(sb.length() - 1);
         return sb.toString();
     }
 }
