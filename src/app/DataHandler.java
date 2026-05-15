@@ -11,8 +11,10 @@ public class DataHandler {
 
         for (T item : items) {
             count++;
+
             sb.append(String.format("(%d) %s ", count, item));
         }
+        sb.deleteCharAt(items.length - 1);
         return sb.toString();
     }
 }
