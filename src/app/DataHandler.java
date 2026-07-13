@@ -4,7 +4,7 @@ public class DataHandler {
 
     public <T> String handleData(T[] items) {
         if (items == null || items.length == 0) {
-            throw new IllegalArgumentException("Items cannot be null");
+            throw new IllegalArgumentException("Items cannot be null or empty");
         }
         StringBuilder sb = new StringBuilder();
         int count = 0;

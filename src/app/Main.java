@@ -5,9 +5,14 @@ public class Main {
 
         DataProcessor processor = new DataProcessor(new DataProvider(), new DataHandler());
 
-        getOutput(processor.getProcessedNames());
-        getOutput(processor.getProcessedSales());
+        try {
+            getOutput(processor.getProcessedNames());
+            getOutput(processor.getProcessedSales());
+        } catch (IllegalArgumentException e){
+            System.out.println("Failed to process data" + e.getMessage());
+        }
     }
+
     private static void getOutput(String output) {
         System.out.println(output);
     }
